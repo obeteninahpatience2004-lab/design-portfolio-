@@ -1,0 +1,479 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container{
+    width: 100%;
+    background-color: #fff5e9;
+    font-family: "Heebo", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+header{
+    padding: 25px 0;
+    max-width: 1500px;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo{
+    width: 70px;
+    height: 70px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .logo-circle{
+    width: 50%;
+    height: 50%;
+    background-color: black;
+    border: 3px solid #fff5e9;
+    border-radius: 50%;
+}
+
+.top-action button{
+    width: 250px;
+    height: 70px;
+    background-color: black;
+    border: none;
+    border-radius: 50px;
+}
+
+.top-action button a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;  
+}
+main{
+    max-width: 1500px;
+    width: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+main .intro-copy{
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+main .intro-copy h2{
+    font-size: 50px;
+}
+
+main .intro-copy p{
+    font-size: 19px;
+    margin: 20px 0 40px;
+}
+
+main .service-grid{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+}
+
+.service-grid .service-one, .service-two, .service-three, .service-four, .service-five, .service-six{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+     border-radius: 15px;
+}
+
+.service-grid .service-one{
+    background-color: #8a00e2;
+    grid-row: span 2;
+    padding: 20px;
+}
+
+.service-grid .service-one-content{
+    display: flex;
+    flex-direction: column;
+}
+
+.service-one-content .service-one-image{
+    display: flex;
+    justify-content: right;
+}
+.service-grid .service-two{
+    background-color: #fba556;
+    padding: 20px;
+}
+.service-grid .service-two-content{
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+}
+
+.service-two-content .service-two-image{
+    display: flex;
+    justify-content: right;
+}
+
+.service-grid .service-three{
+    padding: 20px;
+    background-color: #fc939c;
+}
+
+.service-grid .service-three-content{
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+}
+
+.service-three-content .service-three-image{
+    display: flex;
+    justify-content: right;
+}
+
+.service-grid .service-four{
+    padding: 20px;
+    background-color: #41cbb7;
+}
+
+.service-four-content{
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+}
+
+.service-four-content .service-four-image{
+    display: flex;
+    justify-content: right;
+}
+
+.service-grid .service-five{
+    padding: 20px;
+    background-color: #f4675f;
+    grid-column: span 2;
+}
+
+.service-five-content{
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+}
+
+.service-five-content .service-five-image{
+    display: flex;
+    justify-content: right;
+}
+
+.service-grid .service-six{
+    padding: 20px;
+    background-color: #5c004b;
+}
+
+.service-six-content{
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+}
+
+.service-six-content .service-six-image{
+    display: flex;
+    justify-content: right;
+}
+
+.service-grid p{
+    font-size: 30px; 
+    color: white;
+}
+.about{
+    display: flex;
+    align-items: center;
+    padding: 100px 0;
+}
+
+.about .about-image{
+    margin-right: 80px;
+}
+
+.about .about-image img{
+    width: 100%;
+    border-radius: 50%;
+}
+
+.about .about-image, .about-text{
+    width: 50%;
+}
+.about-text h2{
+    font-size: 40px;
+    line-height: 1;
+}
+
+.about-text p{
+    font-size: 18px;
+    line-height: 1.5;
+    padding: 35px 10px 35px;
+}
+
+.about button{
+    width: 270px;
+    height: 50px;
+    background-color: red;
+    border: none;
+    border-radius: 50px;
+}
+
+.about button a{
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+.work{
+    width: 100%;
+    display: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.work .work-text{
+    text-align: center;
+    width: 100%;
+    padding: 0 0 20px 0 ;
+}
+
+.work .work-gallery{
+    width: 100%;
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    overflow: hidden;
+}
+
+.work .work-gallery img{
+    height: 354px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.work .work-controls{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.work .work-controls .material-symbols-outlined{
+    background-color: black;
+    border-radius: 50%;
+    padding: 40px;
+    color: white;
+    font-size: 50px;
+}
+
+.booking{
+    width: 100%;
+    padding: 100px 20px 70px;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.booking-content{
+    width: 80%;
+    padding: 50px;
+    background-color: black;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 70px;
+}
+
+.booking .booking-copy{
+    color: white;
+}
+
+.booking .booking-copy h1{
+    font-size: 3rem;
+    padding: 20px 0;
+}
+
+.booking .booking-copy p{
+    font-size: 20px;
+}
+
+.booking .booking-action button{
+    width: 240px;
+    padding: 15px;
+     background-color: red;
+    border: none;
+    border-radius: 50px;
+}
+
+.booking .booking-action button a{
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+footer{
+    padding: 30px 0;
+    max-width: 1500px;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .logo{
+    width: 70px;
+    height: 70px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .logo-circle{
+    width: 50%;
+    height: 50%;
+    background-color: black;
+    border: 3px solid #fff5e9;
+    border-radius: 50%;
+}
+
+.bottom-action button{
+    width: 250px;
+    height: 70px;
+     background-color: black;
+    border: none;
+    border-radius: 50px;
+}
+
+.bottom-action button a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+@media(max-width: 1024px){
+    main .service-grid{
+        grid-template-columns: 2fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+
+        gap: 20px;
+    }
+
+    .service-grid .service-four, .service-six{
+        grid-column: span 2;
+    }
+
+    .service-grid .service-five{
+        grid-column: span 1;
+    }
+
+    .service-grid .service-one, .service-two, .service-three, .service-four, .service-five, .service-six{
+        gap: 40px;  
+    }
+
+    header, main, footer, .booking-content{
+        max-width: 1500px;
+        width: 95%;
+    }
+
+    .booking{
+        padding: 100px 0 70px;
+    }
+
+    .booking-content{
+        flex-direction: column;
+        text-align: center;
+         padding: 10px;
+        gap: 40px;
+    }
+
+}
+
+@media(max-width: 720px){
+    main .intro-copy h2{
+        font-size: 4.5rem;
+        line-height: 1.2;
+    }
+
+    main .intro-copy p{
+        font-size: 2.5rem;
+    }
+
+    main .service-grid{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .service-grid .service-one{
+        grid-column: span 2;
+    }
+
+    .service-grid .service-five{
+        grid-column: span 2;
+    }
+
+    .service-grid .service-one, .service-two, .service-three, .service-four, .service-five, .service-six{
+        gap: 60px;  
+    }
+
+    .about{
+        flex-direction: column;
+    }
+
+    .about .about-image, .about-text{
+        width: 95%;
+        text-align: center;
+    }
+
+    .about .about-image{
+        margin-right: 0;
+        padding: 0 0 50px;
+    }
+
+    .booking-content{
+        flex-direction: column;
+        text-align: center;
+
+        padding: 10px;
+        gap: 40px;
+    }
+
+}
+
+@media(max-width: 619px){
+    main .intro-copy h2, .about-text h2{
+        font-size: 2.3rem;
+    }
+
+    main .intro-copy p{
+        font-size: 1.5rem;
+    }
+
+    .booking .booking-copy h1{
+        font-size: 2rem;
+        padding: 20px 0;
+    }
+
+    .booking .booking-copy p{
+        font-size: 1rem;
+    }
+}
